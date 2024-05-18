@@ -1,0 +1,31 @@
+name: real_time_body_detection
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^8.1.6
+  cupertino_icons: ^1.0.2
+  path_provider: ^2.1.1
+  flutter_modular: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  plugin:
+    platforms:
+      android:
+        package: com.u0x48lab.body_detection
+        pluginClass: BodyDetectionPlugin
+      ios:
+        pluginClass: BodyDetectionPlugin
